@@ -215,3 +215,47 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* @media queries */
+@media screen and (max-width: 980px) {
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    #masthead {
+      position: fixed;
+      z-index: 99;
+      width: 100%;
+      margin: 0 0 30px;
+      overflow: auto;
+      color: #fff;
+      background: #fff;
+      border-bottom: 2px solid #ccc;
+    }
+
+
+  /* Make the position of the header `static` (the default positioning) 
+  when the screen is `640px` wide. The header design takes up a lot of room; 
+  you don't want it to stick to the top of a small screen and 
+  leave no room for the rest of your site. */
+
+  @media screen and (max-width: 640px) {
+    #masthead {
+      position: static;
+      z-index: 99;
+      width: 100%;
+      margin: 0 0 30px;
+      overflow: auto;
+      color: #fff;
+      background: #fff;
+      border-bottom: 2px solid #ccc;
+    }
